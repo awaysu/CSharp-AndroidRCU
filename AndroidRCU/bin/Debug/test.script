@@ -1,0 +1,12 @@
+loop_start
+shell input keyevent KEYCODE_DPAD_DOWN
+shell input keyevent KEYCODE_DPAD_UP
+shell am start -a android.settings.SETTINGS
+sleep 5
+shell input keyevent KEYCODE_DPAD_DOWN
+shell input keyevent KEYCODE_DPAD_UP
+shell input keyevent KEYCODE_HOME
+sleep 5
+loop_end
+
+
